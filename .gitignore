@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Large source footage (use scripts/convert_videos.sh → .mp4 for the site)
+static/robot_videos/*.mov
+static/robot_videos/*.MOV
+static/mitas_video.mov
+
+# Local backup of uncompressed hero video
+static/videos/mitas_video_full.mp4
