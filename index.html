@@ -72,9 +72,15 @@
         }
 
         .publication-venue {
-            margin-top: .75rem;
-            color: #666;
+            margin-top: 1.35rem;
+            margin-bottom: 0;
+            color: #c0392b;
             font-style: italic;
+            font-size: 1.25rem;
+        }
+
+        .hero .hero-body {
+            padding-bottom: 1.5rem;
         }
 
         .publication-links {
@@ -171,8 +177,20 @@
             background: #f8f8f8;
         }
 
-        #attention .title.is-3 {
+        #results .title.is-3 {
             color: #222;
+        }
+
+        .sensor-vision {
+            color: #2563eb;
+        }
+
+        .sensor-gelsight {
+            color: #dc2626;
+        }
+
+        .sensor-evetac {
+            color: #eab308;
         }
 
         #results img {
@@ -269,6 +287,9 @@
                                     <span>Dataset</span>
                                 </a>
                             </span>
+                        </div>
+                        <div class="publication-venue">
+                            Accepted at CoRL 2026!
                         </div>
                     </div>
                 </div>
@@ -449,10 +470,11 @@
                 </figure>
                 <div class="content has-text-justified">
                     <p class="content" style="margin-top: 1.5rem;">
-                        Attention weights during <b>lamp installation</b> for <span class="mitas-accent">vision</span>,
-                        <span class="mitas-accent">GelSight Mini</span>, and <span class="mitas-accent">Evetac</span> over
-                        task time. Vision is highest during reaching, Evetac during insertion, and GelSight Mini during
-                        screwing.
+                        Attention weights during <b>lamp installation</b> for <span class="sensor-vision">Vision</span>,
+                        <span class="sensor-gelsight">GelSight Mini</span>, and <span class="sensor-evetac">Evetac</span> over
+                        task time. <span class="sensor-vision">Vision</span> is highest during reaching,
+                        <span class="sensor-evetac">Evetac</span> during insertion, and
+                        <span class="sensor-gelsight">GelSight Mini</span> during screwing.
                     </p>
                 </div>
             </div>
@@ -471,15 +493,14 @@
             <div class="column has-text-centered">
                 <h2 class="title is-3">Experimental Results</h2>
                 <figure class="image">
-                    <img src="./static/mitas_results_all.png"
+                    <img src="./static/main_results_bar_all_24.png"
                          alt="Success rates across five manipulation tasks: MiTaS (V+G+E) achieves 80% average vs 31% vision-only and 54% visual-tactile baselines">
                 </figure>
                 <div class="content has-text-justified">
                     <p class="content" style="margin-top: 1.5rem;">
                         MiTaS with all three sensor modalities (V+G+E) achieves an <b>80% average success rate</b>
                         across five contact-rich tasks, substantially outperforming vision-only (31%) and
-                        visual-tactile (54%) baselines. Co-training further improves visuo-tactile models on
-                        selected tasks even without Evetac at test time.
+                        visual-tactile (54%) baselines.
                     </p>
                 </div>
             </div>
